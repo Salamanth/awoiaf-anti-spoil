@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "A Wiki of Ice and Fire Anti Spoil",
+  "description": "Prevents spoiling while reading the wiki",
+  "version": "0.1",
+
+  "content_scripts": [
+    {
+      "matches": ["http://awoiaf.westeros.org/*"],
+      "js": ["js/jquery-1.11.3.min.js", "js/script.js"]
+    }
+  ],
+
+  "permissions": [
+    "activeTab"
+  ]
+}
